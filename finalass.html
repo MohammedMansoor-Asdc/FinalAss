@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking Website</title>
+    <style>
+        body {
+            background-color: rgb(218, 242, 250);
+        }
+
+        .home img {
+            width: 50%;
+        }
+
+        .section {
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="home">
+            <h2>Home</h2>
+            <h1>Welcome to SkyWings - Your Ultimate Flight Booking Destination!</h1>
+            <img src="https://static.toiimg.com/thumb/msid-91543351,width-748,height-499,resizemode=4,imgsize-50120/.jpg"
+                alt="Picture Note Available at present">
+            <p><b>Discover seamless travel planning with SkyWings! Our user-friendly website offers effortless flight
+                    searches, mobile accessibility, competitive deals, and dedicated support.<br> Fly worry-free while
+                    we
+                    prioritize your security. Explore the world with SkyWings - where dreams take flight!</b></p>
+        </div>
+        <div class="review">
+            <h2>Customer Reviews Section :-</h3>
+                <div>
+                    <div class="review">
+                        <h2>John Doe :-</h2>
+                        <p class="rating">⭐️⭐️⭐️⭐️⭐️</p>
+                        <p class="review-text">Fantastic flight experience! The service was impeccable, and the flight
+                            was
+                            smooth.</p>
+                    </div>
+                    <div class="review">
+                        <h2>Jane Smith :-</h2>
+                        <p class="rating">⭐️⭐️⭐️⭐️</p>
+                        <p class="review-text">Had a great time on my flight. Comfortable seats and friendly staff.</p>
+                    </div>
+                    <div class="review">
+                        <h2>Submit Your Review</h2>
+                        <form action="submit_review.php">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+
+                            <label for="rating">Rating:</label>
+                            <select id="rating" name="rating" required>
+                                <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+                                <option value="4">⭐️⭐️⭐️⭐️</option>
+                                <option value="3">⭐️⭐️⭐️</option>
+                                <option value="2">⭐️⭐️</option>
+                                <option value="1">⭐️</option>
+                            </select><br><br>
+
+                            <label for="flightNumber">Flight Number:</label>
+                            <input type="text" id="flightNumber" name="flightNumber" required><br><br>
+
+                            <label for="flightDate">Flight Date:</label>
+                            <input type="date" id="flightDate" name="flightDate" required><br><br>
+
+                            <label for="reviewText">Review:-</label><br><br>
+                            <textarea id="reviewText" name="reviewText" rows="4" cols="50" required></textarea><br><br>
+
+                            <input type="submit" value="Submit Review">
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <div class="section">
+                    <h2>Flights Section :-</h2>
+                    <h4>Welcome To Aboard :)</h4>
+                    <p>Let's go Places</p>
+                    <input type="radio" name="way" id="oneway">One way
+                    <input type="radio" name="way" id="Roundway">Round Way
+                    <br><br>
+
+                    <label for="from">From</label>
+                    <input type="text" name="from" id="from" placeholder="From">
+                    <br><br>
+
+                    <label for="to">To</label>
+                    <input type="text" name="to" placeholder="To" id="to">
+                    <br><br>
+
+                    <label for="date">Depature Date</label>
+                    <input type="date" name="date" id="date">
+                    <br><br>
+
+                    <label for="return">Return Date</label>
+                    <input type="date" name="return" id="return">
+                    <br><br>
+
+                    <label for="passanger">Passanger</label>
+                    <input type="number" id="passanger" name="passanger" placeholder="No Of Passangers">
+                    <br><br>
+
+                    <label for="price">Price</label>
+                    <input type="number" placeholder="Enter The Price">
+                    <br><br>
+
+                    <label for="class">Class</label>
+                    <select name="class" id="class">
+                        <option>Select The Class</option>
+                        <option value="firstclass">First Class</option>
+                        <option value="secondclass">Second Class</option>
+                        <option value="thirdclass">Third Class</option>
+                    </select>
+
+                    <input type="button" value="Search Flights">
+                </div>
+                <div>
+                    <h2>Flight Timings Section :-</h2>
+                    <table border="1">
+                        <tr>
+                            <th>Flight Number</th>
+                            <th>Departure Time</th>
+                            <th>Arrival Time</th>
+                        </tr>
+                        <tr>
+                            <td>FL001</td>
+                            <td>08:00 AM</td>
+                            <td>10:30 AM</td>
+                        </tr>
+                        <tr>
+                            <td>FL002</td>
+                            <td>10:45 AM</td>
+                            <td>01:15 PM</td>
+                        </tr>
+                        <tr>
+                            <td>FL003</td>
+                            <td>02:30 PM</td>
+                            <td>05:00 PM</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h2>About Us Section :-</h2>
+                    <p>Welcome to our Flight Booking company, where your journey begins with excellence. We are
+                        dedicated to delivering a superior flight booking experience that combines convenience,
+                        efficiency, and personalization. With a user-friendly platform and cutting-edge technology, we
+                        ensure seamless navigation, real-time availability, and hassle-free reservations. Our commitment
+                        to excellence extends to offering a wide range of airlines, flexible itineraries, and
+                        competitive prices, allowing you to tailor your travel plans to perfection. <b>Trust us to make
+                            your flight booking process effortless and enjoyable, as we continue to prioritize your
+                            satisfaction above all. Your dream destination is just a few clicks away with our top-notch
+                            flight booking service.</b></p>
+                    <h3>Contact Me :-</h3>
+                    <p>Contact me at: mm846746@gmail.com</p>
+                    <p>Or you can email me directly: <a href="mailto:mm846746@gmail.com">mm846746@gmail.com</a></p>
+                    <p><b>Destination :- </b><br>Shahaliband, opp Shahghouse Hotel, Hyderabad.</p>
+                </div>
+                <footer>
+                    <div>
+                        <h2>Frequently Asked Questions (FAQ) Section :-</h2>
+                        <p>1. How do I search for flights?<br>
+                            Use our intuitive search bar to enter your travel details, including departure city,
+                            destination, travel dates, and passenger count. Then click 'Search' to explore available
+                            flight options.
+                            <br><br>
+
+                            2. Can I filter my search results?<br>
+                            Yes, you can easily refine your search results by using filters such as airlines, departure
+                            times, layovers, and more. This helps you find the perfect flight that suits your
+                            preferences.
+                            <br><br>
+
+                            3. What payment methods do you accept?<br>
+                            We accept major credit cards, debit cards, and online payment platforms for secure and
+                            convenient transactions.
+                            <br><br>
+
+                            4. How do I know my booking is confirmed?<br>
+                            After completing your booking and payment, you'll receive a confirmation email with all your
+                            flight details. You can also access your booking information in your account dashboard.
+                            <br><br>
+
+                            5. Can I make changes to my booking later?<br>
+                            Depending on the fare type and airline policy, you may be able to make changes to your
+                            booking. Visit our 'Manage Bookings' section or contact our customer support for assistance.
+                            <br><br>
+
+                            6. Is my personal information safe?<br>
+                            Absolutely. We prioritize the security of your data. Our website uses advanced encryption to
+                            protect your personal and payment information.
+                            <br><br>
+
+                            7. What if I need help during the booking process?<br>
+                            Our customer support team is available 24/7 to assist you. Feel free to reach out via live
+                            chat, email, or phone for any inquiries or concerns.
+                            <br><br>
+
+                            Footer:
+                            © 2023 [SkyWings]. All rights reserved.
+
+                        <div SkyWings="" Shahalibanda,="" opp=""></div>
+                        Phone: [9849600239] | Email: [mm846746@gmail.com]</p>
+                    </div>
+                </footer>
+    </header>
+</body>
+
+</html>
